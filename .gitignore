@@ -1,0 +1,7 @@
+.idea/
+*.exe
+venv/
+__pycache__/
+__build_cache__/
+logs/
+user_config.json

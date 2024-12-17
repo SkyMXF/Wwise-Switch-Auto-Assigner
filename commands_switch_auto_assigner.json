@@ -1,0 +1,56 @@
+{
+    "commands": [
+        {
+            "id": "skymxf.switch_auto_assigner.a.tfidf",
+            "displayName": "Switch Auto Assign (TF-IDF)",
+            "program": "SwitchAutoAssigner.exe",
+            "args": "--project_root ${WwiseProjectRoot} --object_id ${id} --user_config user_config.json --match_method tfidf",
+            "cwd": "${WwiseProjectAddons}\\WwiseAuthoringScripts\\SwitchAutoAssigner",
+            "redirectOutputs": false,
+            "startMode": "MultipleSelectionMultipleProcesses",
+            "contextMenu": {
+                "basePath": "Switch Auto Assign",
+                "enabledFor":"SwitchContainer"
+            }
+        },
+        {
+            "id": "skymxf.switch_auto_assigner.a.tfidf.recursive",
+            "displayName": "Switch Auto Assign (TF-IDF + Recursive)",
+            "program": "SwitchAutoAssigner.exe",
+            "args": "--project_root ${WwiseProjectRoot} --object_id ${id} --user_config user_config.json --match_method tfidf --recursive",
+            "cwd": "${WwiseProjectAddons}\\WwiseAuthoringScripts\\SwitchAutoAssigner",
+            "redirectOutputs": false,
+            "startMode": "MultipleSelectionMultipleProcesses",
+            "contextMenu": {
+                "basePath": "Switch Auto Assign",
+                "enabledFor":"WorkUnit,Folder,ActorMixer,SwitchContainer,RandomSequenceContainer,BlendContainer"
+            }
+        },
+        {
+            "id": "skymxf.switch_auto_assigner.b.levenshtein",
+            "displayName": "Switch Auto Assign (Levenshtein)",
+            "program": "SwitchAutoAssigner.exe",
+            "args": "--project_root ${WwiseProjectRoot} --object_id ${id} --user_config user_config.json --match_method levenshtein",
+            "cwd": "${WwiseProjectAddons}\\WwiseAuthoringScripts\\SwitchAutoAssigner",
+            "redirectOutputs": false,
+            "startMode": "MultipleSelectionMultipleProcesses",
+            "contextMenu": {
+                "basePath": "Switch Auto Assign",
+                "enabledFor":"SwitchContainer"
+            }
+        },
+        {
+            "id": "skymxf.switch_auto_assigner.b.levenshtein.recursive",
+            "displayName": "Switch Auto Assign (Levenshtein + Recursive)",
+            "program": "SwitchAutoAssigner.exe",
+            "args": "--project_root ${WwiseProjectRoot} --object_id ${id} --user_config user_config.json --match_method levenshtein --recursive",
+            "cwd": "${WwiseProjectAddons}\\WwiseAuthoringScripts\\SwitchAutoAssigner",
+            "redirectOutputs": false,
+            "startMode": "MultipleSelectionMultipleProcesses",
+            "contextMenu": {
+                "basePath": "Switch Auto Assign",
+                "enabledFor":"WorkUnit,Folder,ActorMixer,SwitchContainer,RandomSequenceContainer,BlendContainer"
+            }
+        }
+    ]
+}
